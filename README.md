@@ -66,14 +66,8 @@ Follow these steps to get SANYA-VPN up and running.
 1.  **Clone or Download the Repository:**
     Get the project files onto your Windows machine.
 
-2.  **Prepare the Environment:**
-    Navigate to the repository folder and run the environment setup script by double-clicking `install_venv.bat`. This script will:
-    *   Check if Python is installed.
-    *   Create a Python virtual environment in a `venv` folder.
-    *   Check if Tailscale is installed.
-
-3.  **Launch the SANYA-VPN Client:**
-    Double-click `SANYA-VPN.bat` to start the client application.
+2.  **Launch the SANYA-VPN Client:**
+    Navigate to the `client` folder and run `SANYA-VPN.exe`.
 
 ## How to Use the Client GUI
 
@@ -95,7 +89,7 @@ Follow these steps to get SANYA-VPN up and running.
 
 *   **Headless authentication with `TS_AUTHKEY` does not work.**
     *   **Solution (Server):** Make sure you are using `sudo -E` to preserve the environment variable for the root user.
-    *   **Solution (Client):** Ensure the `TS_AUTHKEY` environment variable is set for the current user before running the `.bat` file.
+    *   **Solution (Client):** Ensure the `TS_AUTHKEY` environment variable is set for the current user before running the client application.
 
 ## Files in This Repository
 
@@ -103,6 +97,4 @@ Follow these steps to get SANYA-VPN up and running.
 *   `server/server_vpn_setup.py`: The main automation script for the Raspberry Pi server.
 *   `server/server_commands.txt`: A text file with the key shell commands for manual server setup.
 *   `client/SANYA-VPN.exe`: The executable application for the Windows GUI client.
-*   `SANYA-VPN.bat`: A batch file to easily launch the client application on Windows.
-*   `install_venv.bat`: A batch file to prepare the Python environment on Windows.
 *   `LICENSE`: The project's license file.
